@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>RocketCard</title>
+</head>
+<body>
+  <section class="details">
+    <p>Compartilhe seu #rocketcard</p>
+    <div class="card">
+      <header>
+        <img src="./assets/logo.svg" alt="Logo" class="circle" />
+        <span class="username">NomeUsuário</span>
+      </header>
+      <img src="https://avatars.githubusercontent.com/u/19490512?v=4" alt="Usuário" class="img-profile">
+      <div class="info">
+        <ul>
+          <li>
+            <img src="./assets/followers.svg" alt="Seguidores">
+            <span class="followers">X Seguidores</span>
+          </li>
+          <li>
+            <img src="./assets/following.svg" alt="Seguindo">
+            <span class="following">X Seguindo</span>
+          </li>
+          <li>
+            <img src="./assets/repository.svg" alt="Repositórios">
+            <span class="repository">X Repositórios</span>
+          </li>
+          <li>
+            <img src="./assets/company.svg" alt="Companhia">
+            <span class="company">@desconhecido</span>
+          </li>
+          <li>
+            <img src="./assets/location.svg" alt="Localização">
+            <span class="location">Desconhecido</span>
+          </li>
+        </ul>
+      </div>
+      <footer>
+        <img src="./assets/logo.svg" alt="Logo" />
+        <span>rocketcard</span>
+      </footer>
+    </div>
+  </section>
+ 
+  <section class="buttons">
+    <h2>Customizar Rocketcard</h2>
+    <button class="btn btn-default generate-background">Gerar background</button>
+    <button class="btn btn-primary generate-dowload">Fazer download</button>
+  </section>
+
+  <script src="./main.js"></script>
+  <script src="./generate-background.js"></script>
+  <script src="./generate-download.js"></script>
+</body>
+</html>
