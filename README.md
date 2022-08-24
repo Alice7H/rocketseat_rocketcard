@@ -1,3 +1,7 @@
+<h1 align="center">
+  <img alt="Capa" title="Capa" src="./assets/capa.png" />
+</h1>
+
 # ✅ **Requisitos**
 
 ---
