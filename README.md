@@ -52,5 +52,3 @@ Você pode encontrar a fonte no [Google Fonts](https://fonts.google.com/)
 O template do projeto está [aqui](https://www.figma.com/file/xszb6WTlwCXWqE5jg4q2SO/DD-Rocketcard/duplicate).
 
 Lembrando que para ver o layout você precisa ter uma conta no [figma](https://www.figma.com)
-
-## **Observação:**
