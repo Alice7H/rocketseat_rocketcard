@@ -7,44 +7,46 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
+  <script src="./assets/scripts/html2canvas.min.js"></script>
+  <link rel="stylesheet" href="./assets/style.css">
+
   <title>RocketCard</title>
 </head>
 <body>
   <section class="container">
     <p>Compartilhe seu #rocketcard</p>
-    <div class="card">
+    <div class="card" id="element-to-print">
       <header>
-        <img src="./assets/logo.svg" alt="Logo"/>
+        <img src="./assets/images/logo.svg" alt="Logo"/>
         <span class="username">NomeUsuário</span>
       </header>
       <img src="https://avatars.githubusercontent.com/u/19490512?v=4" alt="Usuário" class="img-profile">
       <div class="info">
         <ul>
           <li>
-            <img src="./assets/followers.svg" alt="Seguidores">
+            <img src="./assets/images/followers.svg" alt="Seguidores">
             <span class="followers">X Seguidores</span>
           </li>
           <li>
-            <img src="./assets/following.svg" alt="Seguindo">
+            <img src="./assets/images/following.svg" alt="Seguindo">
             <span class="following">X Seguindo</span>
           </li>
           <li>
-            <img src="./assets/repository.svg" alt="Repositórios">
+            <img src="./assets/images/repository.svg" alt="Repositórios">
             <span class="repository">X Repositórios</span>
           </li>
           <li>
-            <img src="./assets/company.svg" alt="Companhia">
+            <img src="./assets/images/company.svg" alt="Companhia">
             <span class="company">@desconhecido</span>
           </li>
           <li>
-            <img src="./assets/location.svg" alt="Localização">
+            <img src="./assets/images/location.svg" alt="Localização">
             <span class="location">Desconhecido</span>
           </li>
         </ul>
       </div>
       <footer>
-        <img src="./assets/logo.svg" alt="Logo" />
+        <img src="./assets/images/logo.svg" alt="Logo" />
         <span>rocketcard</span>
       </footer>
     </div>
@@ -53,11 +55,13 @@
   <section class="buttons">
     <h2>Customizar Rocketcard</h2>
     <button class="btn btn-default generate-background">Gerar background</button>
-    <button class="btn btn-primary generate-dowload">Fazer download</button>
+    <button class="btn btn-primary generate-download">Fazer download</button>
+    <button class="btn btn-secondary generate-clipboard">Copiar cartão</button>
   </section>
 
-  <script src="./main.js"></script>
-  <script src="./generate-background.js"></script>
-  <script src="./generate-download.js"></script>
+  <script src="./assets/scripts/main.js"></script>
+  <script src="./assets/scripts/generate-background.js"></script>
+  <script src="./assets/scripts/generate-download.js"></script>
+  <script src="./assets/scripts/generate-clipboard.js"></script>
 </body>
 </html>
