@@ -41,7 +41,7 @@ body {
   height: 644px;
   margin: 22px auto 0 auto;
   padding: 20px;
-  animation: scale-center 0.5s ease-in both;
+  animation: scale-center 0.5s ease-in;
   overflow: hidden;
 }
 .card header,
@@ -146,6 +146,28 @@ body {
 .btn-secondary {
  background: var(--bg-crimson); 
 }
+form {
+  display:flex; 
+  flex-direction: column;
+  padding: 20px 0;
+}
+form label,
+form input {
+  font-size: 16px;
+  line-height: 24px;
+}
+form label {
+  margin: 10px 0;
+}
+form input {
+  background-color: var(--bg);
+  border: 1px solid var(--border-button);
+  border-radius: 5px;
+  color: var(--text);
+  padding: 14px;
+  margin-bottom: 10px;
+}
+
 @keyframes scale-center {
   0% {
     -webkit-transform: scaleX(1);
@@ -165,7 +187,7 @@ body {
 }
 @media (min-width: 425px) {
   .card .info {
-    width: 70%;
+    width: 85%;
   }
 }
 @media (min-width: 1024px) {

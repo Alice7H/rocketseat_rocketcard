@@ -54,9 +54,15 @@
  
   <section class="buttons">
     <h2>Customizar Rocketcard</h2>
-    <button class="btn btn-default generate-background">Gerar background</button>
-    <button class="btn btn-primary generate-download">Fazer download</button>
-    <button class="btn btn-secondary generate-clipboard">Copiar cartão</button>
+    <button type="button" class="btn btn-default generate-background">Gerar background</button>
+    <button type="button" class="btn btn-primary generate-download">Fazer download</button>
+    <button type="button" class="btn btn-secondary generate-clipboard">Copiar cartão</button>
+    
+    <form>
+      <label for="user">Usuário do github:</label>
+      <input type="text" id="user" name="user" placeholder="omariosouto">
+      <button type="submit" class="btn btn-default get-githubUser">Buscar usuário</button>
+    </form>
   </section>
 
   <script src="./assets/scripts/main.js"></script>

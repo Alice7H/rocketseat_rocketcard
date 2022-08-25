@@ -1,6 +1,17 @@
 (() => {
-  function getGithubAPI() {
-    fetch('https://api.github.com/users/Alice7H')
+  const form = document.querySelector('form');
+  const user = document.getElementById('user');
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (user.value !== '') {
+      getGithubAPI(user.value);
+    }
+    form.reset();
+  });
+
+  function getGithubAPI(user) {
+    fetch(`https://api.github.com/users/${user}`)
       .then(response => response.json())
       .then(data => {
         user = {
@@ -8,7 +19,7 @@
           avatar_url: data.avatar_url,
           followers: data.followers,
           following: data.following,
-          company: data.company,
+          company: getFirstCompany(data.company),
           repository: data.public_repos,
           location: data.location,
         }
@@ -17,6 +28,14 @@
       .catch(error => {
         console.log(error);
       })
+  }
+
+  function getFirstCompany(data) {
+    if (data != null) {
+      const hasSpace = data.indexOf(' ') > 0;
+      return hasSpace ? data.split(' ')[0] : data;
+    }
+    return data;
   }
 
   function populateCard(user) {
@@ -37,5 +56,5 @@
     location.innerHTML = user.location || "Desconhecido";
   }
 
-  getGithubAPI();
+  getGithubAPI('Alice7H');
 })()
