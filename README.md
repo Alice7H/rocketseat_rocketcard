@@ -43,7 +43,7 @@ Neste desafio foi proposto a construção de um card que altere as cores de fund
 
 font-family: Prompt
 
-Font Weight: 100, 400 e 700
+Font Weight: 400
 
 Você pode encontrar a fonte no [Google Fonts](https://fonts.google.com/)
 
