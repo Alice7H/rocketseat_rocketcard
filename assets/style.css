@@ -41,8 +41,9 @@ body {
   height: 644px;
   margin: 22px auto 0 auto;
   padding: 20px;
-  animation: scale-center 0.5s ease-in;
   overflow: hidden;
+  animation: scale-center 0.5s ease-in-out;
+  animation-delay: 1s;
 }
 .card header,
 .card footer {
@@ -64,9 +65,9 @@ body {
 }
 .card .img-profile {
   border-radius: 50%;
-  outline: 10px solid var(--img-profile);
-  outline-offset: -10px;
+  border: 10px solid var(--img-profile);
   margin-top: 12px;
+  margin-left: 5%; 
   width: 372px;
 }
 .card .info {
@@ -181,21 +182,21 @@ form input {
   }
   100% {
     -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    transform: scaleX(1);
     opacity: 1;
   }
 }
 @media (min-width: 425px) {
+  .card .img-profile {
+    margin-left: 10%; 
+  }
   .card .info {
     width: 85%;
   }
 }
 @media (min-width: 1024px) {
   body {
-    display: flex;
     flex-direction: row;
-    /* justify-content: center;
-    align-items: center; */
     gap: 96px; 
   }
   .container {

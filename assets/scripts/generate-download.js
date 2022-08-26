@@ -1,8 +1,8 @@
 (() => {
   const btnDownload = document.querySelector('.generate-download');
+  const element = document.getElementById("element-to-print");
 
   btnDownload.addEventListener('click', () => {
-    const element = document.getElementById("element-to-print");
     element.style.backgroundColor = "#0e1218";
     html2canvas(element, {
       allowTaint: true,

@@ -1,8 +1,8 @@
 (() => {
   const btnClipboard = document.querySelector('.generate-clipboard');
+  const element = document.getElementById("element-to-print");
 
   btnClipboard.addEventListener('click', () => {
-    const element = document.getElementById("element-to-print");
     element.style.backgroundColor = "#0e1218";
     html2canvas(element, {
       allowTaint: true,
